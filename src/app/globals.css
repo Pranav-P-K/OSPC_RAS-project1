@@ -1,0 +1,314 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@layer utilities {
+    .text-shadow {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    }
+}
+
+/*
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.container {
+    min-height: 100vh;
+    background: #000012;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.stars {
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(1px 1px at 20px 30px, #fff, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 40px 70px, #fff, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 50px 160px, #fff, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 90px 40px, #fff, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 130px 80px, #fff, rgba(0,0,0,0)),
+                radial-gradient(1px 1px at 160px 120px, #fff, rgba(0,0,0,0));
+    background-repeat: repeat;
+    background-size: 200px 200px;
+}
+
+.hero {
+    position: relative;
+    z-index: 1;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.navbar {
+    background-color: #000012;
+    padding: 20px 30px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+    border-style: solid;
+    margin: 1rem 0rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.line {
+    color: white;
+    margin: 10px;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    background: linear-gradient(to right, #FF4D8C, #FF85A9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 2px solid rgba(255, 77, 140, 0.3);
+    border-radius: 8px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 77, 140, 0.2);
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.btn:hover {
+    border-color: rgba(255, 77, 140, 0.6);
+    box-shadow: 0 0 15px rgba(255, 77, 140, 0.4);
+}
+
+.main-content {
+    text-align: center;
+    padding-top: 25vh;
+    margin-bottom: 5.5vh;
+}
+
+.main-title {
+    background: linear-gradient(to right, #FF4D8C, #FF85A9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 100px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: white;
+    font-size: 64px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+.event-info {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.logo-container {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.separator {
+    color: white;
+    font-size: 24px;
+    opacity: 0.8;
+}
+
+.about {
+    z-index: 1;
+    text-align: center;
+    padding: 2rem;
+    background: #180321;
+    border-radius: 100% 100% 0 0;
+    color: white;
+    position: relative;
+    background-clip: padding-box;
+    box-shadow: 0px -18px 80.6px #CE1FA3;
+}
+
+.prize-pool {
+    font-size: 4rem;
+    text-align: center;
+    margin: 3rem auto;
+    font-weight: 600;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 1.5rem;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.details p {
+    margin: 0;
+}
+
+.team-pricing {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.team-pricing p {
+    margin: 5px 0;
+}
+
+.line {
+    width: 2px;
+    height: 15rem;
+    background-color: rgb(255, 255, 255);
+    margin: 0 20px;
+}
+
+.register-btn {
+    display: inline-block;
+    background: linear-gradient(180deg, #917DFF 0%, #9C4BFF 100%);
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-top: 1rem;
+    box-shadow: 0 4px 15px rgba(128, 90, 213, 0.5);
+    transition: transform 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 2rem 1rem 2rem;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    font-weight: bolder;
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.links p {
+    font-size: xx-large;
+    margin-bottom: 1rem;
+}
+
+.links a {
+    color: white;
+    font-size: large;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+.footer-reg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+}
+
+.footer-reg p {
+    font-size: x-large;
+    margin-bottom: 1.5rem;
+}
+
+@keyframes glow {
+    0% {
+        border-top-color: rgba(255, 0, 255, 0.5);
+    }
+    100% {
+        border-top-color: rgba(255, 0, 255, 0.8);
+    }
+}
+*/
