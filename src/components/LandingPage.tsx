@@ -55,7 +55,7 @@ export default function LandingPage() {
           <div className="flex justify-center items-center gap-5 mt-8">
             <img src="/ras.png" alt="RAS Logo" className="w-8 h-8 sm:w-12 sm:h-12" />
             <span className="text-white text-xl sm:text-2xl opacity-80">X</span>
-            <img src="/ospc.png" alt="OSPC Logo" className="w-8 h-8 sm:w-12 sm:h-12" />
+            <img src="/ospc.png" alt="OSPC Logo" className="w-12 h-12 sm:w-16 sm:h-16" />
           </div>
         </div>
       </div>
@@ -89,7 +89,13 @@ export default function LandingPage() {
         </div>
       </div>
 
-      
+      {/* Sponser */}
+      <div className='z-10 flex flex-col justify-center items-center my-12 p-4'>
+        <h1 className="text-4xl sm:text-6xl font-semibold text-white mb-12 text-shadow-[0_0_10px_rgba(255,255,255,0.3)] pt-12">Sponser</h1>
+        <div className='mx-8 border-white border-4 rounded-2xl'>
+          <img src="/logo_light.png" alt="Channelise" className='w-[400px] h-[100px] p-4 left-8' />
+        </div>
+      </div>
 
       {/* Footer */}
       <footer className="bg-black text-white py-8 px-4 sm:px-8 flex flex-col items-center z-10 bg-opacity-70">
@@ -125,6 +131,7 @@ export default function LandingPage() {
       <div className=' bg-black text-white border-t border-white w-full p-4 w-full z-10'>
         <p className="text-center font-bold bg">© 2025 OSPC X IEEE RAS - VIT CHENNAI</p>
       </div>
+
     </div>
   );
 }
