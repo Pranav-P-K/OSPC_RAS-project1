@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import img from 'next/img';
+//import img from 'next/img';
 import { IBM_Plex_Mono } from 'next/font/google';
 
 const roboto = IBM_Plex_Mono({
@@ -27,16 +27,16 @@ export default function LandingPage() {
       ></div>
 
       {/* Navbar */}
-      <nav className="bg-[#000012] py-5 px-4 sm:px-8 absolute w-full top-0 z-20 border-t border-b border-white my-4">
+      <nav className="bg-[#000012] py-5 px-4 sm:px-4 absolute w-full top-[-15px] z-20 border-t border-b border-white my-4 si">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="text-xl sm:text-2xl font-semibold bg-gradient-to-r from-[#FF4D8C] to-[#FF85A9] bg-clip-text text-transparent">
+          <div className="text-sm sm:text-2xl font-semibold bg-gradient-to-b from-[#FF1B1B] to-[#5361FF] bg-clip-text text-transparent">
             Mission: Data Impossible
           </div>
           <div className="flex gap-3 sm:gap-5">
-            <button className="px-3 py-1 sm:px-5 sm:py-2 border-2 border-[rgba(255,77,140,0.3)] rounded-lg bg-transparent text-white hover:border-[rgba(255,77,140,0.6)] hover:shadow-[0_0_15px_rgba(255,77,140,0.4)] transition-all text-sm sm:text-base">
+            <button className="px-3 py-1 sm:px-5 sm:py-2 border-2 border-[rgba(255,77,140,0.3)] rounded-lg bg-transparent text-white hover:border-[rgba(255,77,140,0.6)] hover:shadow-[0_0_15px_rgba(255,77,140,0.4)] transition-all text-xs sm:text-base">
               Register Now
             </button>
-            <button className="px-3 py-1 sm:px-5 sm:py-2 border-2 border-[rgba(255,77,140,0.3)] rounded-lg bg-transparent text-white hover:border-[rgba(255,77,140,0.6)] hover:shadow-[0_0_15px_rgba(255,77,140,0.4)] transition-all text-sm sm:text-base">
+            <button className="px-3 py-1 sm:px-5 sm:py-2 border-2 border-[rgba(255,77,140,0.3)] rounded-lg bg-transparent text-white hover:border-[rgba(255,77,140,0.6)] hover:shadow-[0_0_15px_rgba(255,77,140,0.4)] transition-all text-xs sm:text-base">
               Start Mission
             </button>
           </div>
@@ -46,7 +46,7 @@ export default function LandingPage() {
       {/* Hero Section */}
       <div className="relative z-10 max-w-7xl mx-auto flex-grow flex flex-col justify-center items-center px-4">
         <div className="text-center pt-[15vh] sm:pt-[25vh] mb-[5.5vh]">
-          <h1 className="text-6xl sm:text-[100px] bg-gradient-to-r from-[#FF4D8C] to-[#FF85A9] bg-clip-text text-transparent mb-2">
+          <h1 className="text-6xl sm:text-[100px] bg-gradient-to-b from-[#FF1B1B] to-[#5361FF] bg-clip-text text-transparent mb-2">
             Mission
           </h1>
           <h2 className="text-4xl sm:text-6xl text-white mb-8 tracking-wider">Data Impossible</h2>
@@ -60,8 +60,10 @@ export default function LandingPage() {
       </div>
 
       {/* About Section */}
-      <div className="z-10 text-center py-8 bg-[#180321] rounded-t-[100%] relative shadow-[0px_-18px_80.6px_#CE1FA3] px-4">
-        <h1 className="text-4xl sm:text-6xl font-semibold text-white mb-12 text-shadow-[0_0_10px_rgba(255,255,255,0.3)]">
+      <div className="z-10 text-center py-8 bg-[#180321] bg-opacity-70 relative shadow-[0px_-12px_100.6px_#CE1FA3] px-4 rounded-t-[40%]"
+           
+      >
+        <h1 className="text-4xl sm:text-6xl font-semibold text-white mb-12 text-shadow-[0_0_10px_rgba(255,255,255,0.3)] pt-12">
           Prize Pool: ₹5,000
         </h1>
         <div className="flex flex-col sm:flex-row justify-evenly items-center px-5 mb-6 text-white">
@@ -87,8 +89,8 @@ export default function LandingPage() {
       </div>
 
       {/* Footer */}
-      <footer className="bg-black text-white py-8 px-4 sm:px-8 flex flex-col items-center">
-        <div className="w-full flex flex-col sm:flex-row justify-between mb-6">
+      <footer className="bg-black text-white py-8 px-4 sm:px-8 flex flex-col items-center z-10 bg-opacity-70">
+        <div className="w-full flex flex-col sm:flex-row justify-between mb-6 ">
           <div className="w-full sm:w-1/2 flex flex-col sm:flex-row justify-around mb-6 sm:mb-0">
             <div className="text-center sm:text-left mb-6 sm:mb-0">
               <p className="text-2xl sm:text-3xl mb-4">IEEE RAS</p>
@@ -116,8 +118,10 @@ export default function LandingPage() {
             </button>
           </div>
         </div>
-        <p className="text-center font-bold">© 2025 OSPC X IEEE RAS - VIT CHENNAI</p>
       </footer>
+        <div className=' bg-black text-white border-t border-white w-full p-4 w-full z-10'>
+          <p className="text-center font-bold bg">© 2025 OSPC X IEEE RAS - VIT CHENNAI</p>
+        </div>
     </div>
   );
 }
