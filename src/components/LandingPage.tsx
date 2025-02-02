@@ -1,6 +1,7 @@
 import Head from 'next/head';
 //import img from 'next/img';
 import { IBM_Plex_Mono } from 'next/font/google';
+import Image from 'next/image';
 
 const roboto = IBM_Plex_Mono({
   weight: '400',
@@ -61,7 +62,7 @@ export default function LandingPage() {
 
       {/* About Section */}
       <div className="z-10 text-center py-8 bg-[#180321] bg-opacity-70 relative shadow-[0px_-12px_100.6px_#CE1FA3] px-4 rounded-t-[40%]"
-           
+
       >
         <h1 className="text-4xl sm:text-6xl font-semibold text-white mb-12 text-shadow-[0_0_10px_rgba(255,255,255,0.3)] pt-12">
           Prize Pool: ₹5,000
@@ -87,6 +88,8 @@ export default function LandingPage() {
           </div>
         </div>
       </div>
+
+      
 
       {/* Footer */}
       <footer className="bg-black text-white py-8 px-4 sm:px-8 flex flex-col items-center z-10 bg-opacity-70">
@@ -119,9 +122,9 @@ export default function LandingPage() {
           </div>
         </div>
       </footer>
-        <div className=' bg-black text-white border-t border-white w-full p-4 w-full z-10'>
-          <p className="text-center font-bold bg">© 2025 OSPC X IEEE RAS - VIT CHENNAI</p>
-        </div>
+      <div className=' bg-black text-white border-t border-white w-full p-4 w-full z-10'>
+        <p className="text-center font-bold bg">© 2025 OSPC X IEEE RAS - VIT CHENNAI</p>
+      </div>
     </div>
   );
 }
