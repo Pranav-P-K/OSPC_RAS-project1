@@ -1,7 +1,6 @@
 import Head from 'next/head';
-//import img from 'next/img';
 import { IBM_Plex_Mono } from 'next/font/google';
-import Image from 'next/image';
+import  Timeline  from './Timeline';
 
 const roboto = IBM_Plex_Mono({
   weight: '400',
@@ -87,6 +86,14 @@ export default function LandingPage() {
             <p>AB3, VIT Chennai</p>
           </div>
         </div>
+      </div>
+
+      {/* Timeline */}
+      <div className='z-10 flex flex-col items-center w-full'>
+        <h1 className="text-4xl sm:text-6xl font-semibold text-white mb-12 text-shadow-[0_0_10px_rgba(255,255,255,0.3)] pt-12">
+          Timeline
+        </h1>
+        <Timeline />
       </div>
 
       {/* Sponser */}
